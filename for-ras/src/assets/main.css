@@ -1,35 +1,10 @@
 @import "./base.css";
 
 #app {
-  max-width: 1280px;
+  /* max-width: 1280px; */
   margin: 0 auto;
-  padding: 2rem;
 
   font-weight: normal;
-}
-
-a {
-  text-decoration: none;
-  transition: 0.4s;
-}
-
-@media (hover: hover) {
-  a:hover {
-    background: rgb(82, 82, 159);
-    background: linear-gradient(90deg, rgba(82, 82, 159, 0.6) 0%, rgba(255, 255, 255, 0) 100%);
-    border-bottom: 2px solid black;
-  }
-}
-
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+  display: flex;
+  flex-direction: row;
 }

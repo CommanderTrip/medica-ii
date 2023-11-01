@@ -29,12 +29,23 @@ div {
   box-shadow: 3px 7px 30px -1px rgba(0, 0, 0, 0.67);
 }
 
+p {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+}
+
 span {
+  font-family: "Alegreya", serif;
+  font-weight: 700;
   text-align: end;
 }
 
 em {
   font-size: large;
   font-weight: bolder;
+}
+
+div:hover {
+  transform: scale(1.1);
 }
 </style>

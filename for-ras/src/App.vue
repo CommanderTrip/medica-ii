@@ -49,6 +49,7 @@ nav {
 
 .page {
   padding-inline: 5%;
+  width: 100%;
 }
 
 @media (hover: hover) {

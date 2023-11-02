@@ -25,7 +25,7 @@ export default {
   <img :key="this.alt" :src="this.src" :alt="this.alt" :style="cssVars" />
 </template>
 
-<style>
+<style scoped>
 img {
   transform: rotate(var(--rotation));
   max-width: 100%;

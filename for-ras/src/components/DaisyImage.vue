@@ -28,9 +28,12 @@ export default {
 <style>
 img {
   transform: rotate(var(--rotation));
+  max-width: 100%;
+  margin: -50px;
+  border: 2px solid white;
 }
 img:hover {
-  transform: scale(1.25);
+  transform: scale(2);
   z-index: 99;
 }
 </style>

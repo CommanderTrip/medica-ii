@@ -24,7 +24,7 @@ a {
   padding-block: 0.5em;
   padding-right: 5rem;
   min-width: 200px;
-  background: linear-gradient(90deg, var(--ras-color-darken) 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(90deg, rgba(255, 228, 196, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
   font-style: normal;
   text-align: center;
   font-size: larger;
@@ -43,7 +43,7 @@ nav {
 .router-link-active {
   border-block: 2px solid black;
   color: purple;
-  background: linear-gradient(90deg, white 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(90deg, bisque 0%, rgba(255, 255, 255, 0) 100%);
   font-style: italic;
 }
 

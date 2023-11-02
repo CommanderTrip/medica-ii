@@ -32,7 +32,7 @@ export const letters = [
     body: "Ras you’re loved more than you know. Despite the fact that according to the family tree I’m your grandmother, you really do feel like a flesh and blood sister to me and I love you like one.  I can tell you genuinely care about all of your friends, even if you sometimes have a hard time showing it. I can always vent to you or ask you for advice and you can take it in stride and help me out. You never fail to make me laugh. I enjoy raiding with you so much with all the strange and cursed in-jokes and banter, many of which come from your antics. You’re very intelligent and I can tell you work hard at everything you do. You’re also an incredibly skilled player. You always figure out mechanics quickly and understand them well enough to call them out and teach to the people who aren’t picking it up as quickly. On top of that you’re healing, a position I don’t envy in the slightest, and managing to pull top numbers while you’re at it. That takes absolute skill, dedication, and hard work.You’re a hard worker, a phenomenal player, and a great friend. I wouldn’t want anyone else to be my raid leader."
   },
   {
-    author: "",
-    body: ""
+    author: "Theo",
+    body: "WHERE'S MY LETTER?!"
   },
 ]

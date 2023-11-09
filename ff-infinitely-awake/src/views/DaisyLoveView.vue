@@ -1,6 +1,6 @@
-<script>
+<script lang="ts">
 import DaisyImage from "../components/DaisyImage.vue"
-import { daisyPhotos } from "../components/daisyPhotos"
+import { daisyPhotos } from "@/components/daisyPhotos"
 
 export default {
   data: () => ({

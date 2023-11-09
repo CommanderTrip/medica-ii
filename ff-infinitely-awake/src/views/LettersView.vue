@@ -1,10 +1,10 @@
 <script setup>
 import LetterCard from "../components/LetterCard.vue"
-import { letters } from "../components/letters"
+import { letters } from "@/components/letters"
 </script>
 
 <template>
-  <h1>Letters</h1>
+  <h1>Letters of Appreciation to Ras</h1>
   <div className="letters-page">
     <LetterCard v-for="letter in letters" :key="letter.author" :letter="letter" />
   </div>

@@ -27,6 +27,7 @@ div {
   display: flex;
   flex-direction: column;
   box-shadow: 3px 7px 30px -1px rgba(0, 0, 0, 0.67);
+  height: fit-content;
 }
 
 p {

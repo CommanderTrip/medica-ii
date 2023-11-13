@@ -21,7 +21,6 @@ import { RouterLink, RouterView } from "vue-router"
 a {
   text-decoration: none;
   color: black;
-  padding-inline: 2em;
   padding-block: 0.5em;
   padding-right: 5rem;
   min-width: 200px;
@@ -29,10 +28,6 @@ a {
   font-style: normal;
   text-align: center;
   font-size: larger;
-}
-
-a:first-child {
-  margin-top: 5rem;
 }
 
 nav {
@@ -48,8 +43,7 @@ nav {
 }
 
 .page {
-  padding-inline: 5%;
-  width: 100%;
+  padding-inline: 2rem;
 }
 
 @media (hover: hover) {
@@ -59,9 +53,15 @@ nav {
 }
 
 @media (max-width: 800px) {
+  nav {
+    flex-direction: row;
+  }
+
   header {
     margin-right: 0;
     min-width: 100px;
+    position: sticky;
+    bottom: 0;
   }
 
   a {

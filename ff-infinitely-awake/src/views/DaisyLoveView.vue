@@ -33,7 +33,6 @@ h1 {
   text-align: center;
   font-family: "Libre Baskerville", serif;
   font-weight: 700;
-  font-size: 36pt;
   color: black;
   border-block: 5px solid black;
   margin-block: 2rem;

@@ -1,7 +1,7 @@
-<script lang="ts">
+<script>
 import DaisyImage from "../components/DaisyImage.vue"
 import { daisyPhotos } from "@/components/daisyPhotos"
-import PageLayout from "@/components/PageLayout.vue"
+import PageLayout from "../components/PageLayout.vue"
 
 export default {
   data: () => ({
@@ -20,11 +20,11 @@ export default {
   <PageLayout page-title="Daisy Love">
     <div class="daisy-page">
       <DaisyImage
-        v-for="image in this.photos"
+        v-for="image in photos"
         :key="image.alt"
         :src="image.src"
         :alt="image.alt"
-        :random="this.random() * 90"
+        :random="random() * 90"
       />
     </div>
   </PageLayout>

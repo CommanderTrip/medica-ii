@@ -1,8 +1,8 @@
 <script>
-import { defineComponent, ref } from "vue"
+import { ref } from "vue"
 import { RouterLink } from "vue-router"
 
-export default defineComponent({
+export default {
   components: { RouterLink },
   data: () => ({
     isClosed: ref(false),
@@ -14,14 +14,13 @@ export default defineComponent({
     },
     flipState() {
       this.isClosed = !this.isClosed
-      console.log("isOpen", this.isClosed)
     }
   },
   mounted() {
     this.onResize()
     window.addEventListener("resize", this.onResize, { passive: true })
   }
-})
+}
 </script>
 
 <template>

@@ -17,7 +17,9 @@ export default defineComponent({
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+@import "../assets/styles.scss";
+
 .sidebar {
   padding-right: 0.5rem;
 }
@@ -53,7 +55,7 @@ nav {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: $lg-phone) {
   nav {
     flex-direction: row;
   }

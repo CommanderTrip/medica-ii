@@ -22,13 +22,15 @@ export default {
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+@import "../assets/styles.scss";
+
 .page-layout {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  //grid-template-rows: repeat(5, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  min-width: $sm-phone;
 }
 
 .page-title {
@@ -48,5 +50,12 @@ export default {
 
 .content {
   grid-area: 2 / 2 / 6 / 6;
+}
+
+@media (max-width: $lg-phone) {
+  .page-layout {
+    display: flex;
+    flex-direction: column;
+  }
 }
 </style>

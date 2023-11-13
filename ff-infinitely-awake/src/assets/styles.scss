@@ -1,4 +1,11 @@
-@import "./base.css";
+@import "./base.scss";
+
+/* Semantic Sizing Breakpoints for devices */
+
+$sm-phone: 320px;
+$lg-phone: 480px;
+$sm-monitor: 768px;
+$lg-monitor: 1280px;
 
 #app {
   /* max-width: 1280px; */

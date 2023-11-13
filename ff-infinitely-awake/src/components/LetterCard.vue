@@ -18,7 +18,9 @@ export default {
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+@import "../assets/styles";
+
 div {
   background-color: bisque;
   padding: 1rem;

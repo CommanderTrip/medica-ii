@@ -14,8 +14,8 @@ export default {
 
 <template>
   <div class="page-layout">
-    <h1 class="page-title">{{ pageTitle }}</h1>
     <SideBar class="sidebar" />
+    <h1 class="page-title">{{ pageTitle }}</h1>
     <div class="content">
       <slot></slot>
     </div>
@@ -30,7 +30,6 @@ export default {
   grid-template-columns: repeat(5, 1fr);
   grid-column-gap: 0;
   grid-row-gap: 0;
-  min-width: $sm-phone;
 }
 
 .page-title {
@@ -39,7 +38,7 @@ export default {
   font-weight: 700;
   color: black;
   border-block: 5px solid black;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 0.5rem;
   grid-area: 1 / 1 / 2 / 6;
 }
@@ -50,6 +49,21 @@ export default {
 
 .content {
   grid-area: 2 / 2 / 6 / 6;
+}
+
+@media (max-width: $sm-monitor) {
+  .page-layout {
+    grid-template-columns: repeat(3, 1fr);
+    grid-area: 1 / 1 / 2 / 3;
+  }
+
+  .sidebar {
+    grid-area: 2 / 1 / 2 / 1;
+  }
+
+  .content {
+    grid-area: 2 / 2 / 2 / 4;
+  }
 }
 
 @media (max-width: $lg-phone) {

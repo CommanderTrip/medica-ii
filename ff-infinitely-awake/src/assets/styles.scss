@@ -15,9 +15,3 @@ $lg-monitor: 1280px;
   display: flex;
   flex-direction: row;
 }
-
-@media (max-width: 800px) {
-  #app {
-    flex-direction: column-reverse;
-  }
-}

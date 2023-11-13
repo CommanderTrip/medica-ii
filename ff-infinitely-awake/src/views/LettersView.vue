@@ -12,15 +12,17 @@ import PageLayout from "@/components/PageLayout.vue"
   </PageLayout>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+@import "../assets/styles";
+
 .letters-page {
   display: grid;
   grid-template-columns: auto auto;
   justify-items: center;
-  min-width: 350px;
 }
 
-@media (max-width: 800px) {
+// Single Column mode
+@media (max-width: $sm-monitor) {
   .letters-page {
     min-height: 100vh;
     grid-template-columns: auto;

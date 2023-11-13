@@ -1,14 +1,36 @@
 <script>
-import { defineComponent } from "vue"
+import { defineComponent, ref } from "vue"
 import { RouterLink } from "vue-router"
 
 export default defineComponent({
-  components: { RouterLink }
+  components: { RouterLink },
+  data: () => ({
+    isOpen: ref(true),
+    mobileSidebar: ref(false)
+  }),
+  methods: {
+    onResize() {
+      this.mobileSidebar = window.innerWidth < 768 // See styles.scss for size
+    }
+  },
+  mounted() {
+    this.onResize()
+    window.addEventListener("resize", this.onResize, { passive: true })
+  }
 })
 </script>
 
 <template>
-  <div class="sidebar">
+  <div v-if="mobileSidebar.value" class="sidebar">
+    <nav>
+      <RouterLink to="/">Home</RouterLink>
+      <RouterLink to="/Letters">Letters</RouterLink>
+      <RouterLink to="/DaisyLove">Daisy Love</RouterLink>
+    </nav>
+  </div>
+
+  <div v-else class="sidebar" :class="{ open: isOpen }">
+    <span class="material-symbols-outlined"> menu </span>
     <nav>
       <RouterLink to="/">Home</RouterLink>
       <RouterLink to="/Letters">Letters</RouterLink>
@@ -56,8 +78,11 @@ nav {
 }
 
 @media (max-width: $lg-phone) {
-  nav {
-    flex-direction: row;
+  .sidebar {
+    background: #2c4736;
+    border-radius: 10px;
+    padding-block: 1rem;
+    margin: 1rem;
   }
 
   a {

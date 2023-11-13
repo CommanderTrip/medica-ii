@@ -26,7 +26,7 @@ export default {
 .page-layout {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  //grid-template-rows: repeat(5, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }

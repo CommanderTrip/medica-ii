@@ -1,6 +1,7 @@
 <script lang="ts">
 import DaisyImage from "../components/DaisyImage.vue"
 import { daisyPhotos } from "@/components/daisyPhotos"
+import PageLayout from "@/components/PageLayout.vue"
 
 export default {
   data: () => ({
@@ -11,33 +12,25 @@ export default {
       return Math.random()
     }
   },
-  components: { DaisyImage }
+  components: { PageLayout, DaisyImage }
 }
 </script>
 
 <template>
-  <h1>Daisy Love</h1>
-  <div class="daisy-page">
-    <DaisyImage
-      v-for="image in this.photos"
-      :key="image.alt"
-      :src="image.src"
-      :alt="image.alt"
-      :random="this.random() * 90"
-    />
-  </div>
+  <PageLayout page-title="Daisy Love">
+    <div class="daisy-page">
+      <DaisyImage
+        v-for="image in this.photos"
+        :key="image.alt"
+        :src="image.src"
+        :alt="image.alt"
+        :random="this.random() * 90"
+      />
+    </div>
+  </PageLayout>
 </template>
 
 <style scoped>
-h1 {
-  text-align: center;
-  font-family: "Libre Baskerville", serif;
-  font-weight: 700;
-  color: black;
-  border-block: 5px solid black;
-  margin-block: 2rem;
-}
-
 img:hover {
   transform: scale(1.5);
   z-index: 99;

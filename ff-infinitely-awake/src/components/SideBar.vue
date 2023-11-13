@@ -8,7 +8,7 @@ export default defineComponent({
 </script>
 
 <template>
-  <div>
+  <div class="sidebar">
     <nav>
       <RouterLink to="/">Home</RouterLink>
       <RouterLink to="/Letters">Letters</RouterLink>
@@ -18,12 +18,17 @@ export default defineComponent({
 </template>
 
 <style scoped>
+.sidebar {
+  padding-right: 0.5rem;
+}
+
 a {
   text-decoration: none;
   color: black;
   padding-block: 0.5em;
   padding-right: 5rem;
-  min-width: 200px;
+  padding-left: 1rem;
+  text-wrap: nowrap;
   background: linear-gradient(90deg, rgba(255, 228, 196, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
   font-style: normal;
   text-align: center;

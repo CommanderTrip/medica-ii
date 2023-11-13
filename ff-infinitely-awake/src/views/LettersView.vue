@@ -1,25 +1,18 @@
 <script setup>
 import LetterCard from "../components/LetterCard.vue"
 import { letters } from "@/components/letters"
+import PageLayout from "@/components/PageLayout.vue"
 </script>
 
 <template>
-  <h1>Letters of Appreciation to Ras</h1>
-  <div class="letters-page">
-    <LetterCard v-for="letter in letters" :key="letter.author" :letter="letter" />
-  </div>
+  <PageLayout page-title="Letters of Appreciation to Ras">
+    <div class="letters-page">
+      <LetterCard v-for="letter in letters" :key="letter.author" :letter="letter" />
+    </div>
+  </PageLayout>
 </template>
 
 <style scoped>
-h1 {
-  text-align: center;
-  font-family: "Libre Baskerville", serif;
-  font-weight: 700;
-  color: black;
-  border-block: 5px solid black;
-  margin-block: 2rem;
-}
-
 .letters-page {
   display: grid;
   grid-template-columns: auto auto;

@@ -14,8 +14,8 @@ export default {
 
 <template>
   <div class="page-layout">
-    <SideBar class="sidebar" />
     <h1 class="page-title">{{ pageTitle }}</h1>
+    <SideBar class="sidebar" />
     <div class="content">
       <slot></slot>
     </div>

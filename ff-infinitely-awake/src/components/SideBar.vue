@@ -5,12 +5,16 @@ import { RouterLink } from "vue-router"
 export default defineComponent({
   components: { RouterLink },
   data: () => ({
-    isOpen: ref(true),
+    isClosed: ref(false),
     mobileSidebar: ref(false)
   }),
   methods: {
     onResize() {
-      this.mobileSidebar = window.innerWidth < 768 // See styles.scss for size
+      this.mobileSidebar = window.innerWidth < 480 // See styles.scss for size
+    },
+    flipState() {
+      this.isClosed = !this.isClosed
+      console.log("isOpen", this.isClosed)
     }
   },
   mounted() {
@@ -21,7 +25,7 @@ export default defineComponent({
 </script>
 
 <template>
-  <div v-if="mobileSidebar.value" class="sidebar">
+  <div v-if="!mobileSidebar" class="sidebar">
     <nav>
       <RouterLink to="/">Home</RouterLink>
       <RouterLink to="/Letters">Letters</RouterLink>
@@ -29,8 +33,10 @@ export default defineComponent({
     </nav>
   </div>
 
-  <div v-else class="sidebar" :class="{ open: isOpen }">
-    <span class="material-symbols-outlined"> menu </span>
+  <div v-else :class="{ open: isClosed }">
+    <div @click="flipState">
+      <span class="material-symbols-outlined"> menu </span>
+    </div>
     <nav>
       <RouterLink to="/">Home</RouterLink>
       <RouterLink to="/Letters">Letters</RouterLink>
@@ -44,6 +50,16 @@ export default defineComponent({
 
 .sidebar {
   padding-right: 0.5rem;
+  transition: 0.4s;
+}
+
+span {
+  color: black;
+  padding-left: 2rem;
+}
+
+.open > nav {
+  display: none;
 }
 
 a {
@@ -87,6 +103,9 @@ nav {
 
   a {
     min-width: 50px;
+    border-radius: 10px;
+    margin-inline: 1rem;
+    margin-block: 0.1rem;
   }
 }
 </style>

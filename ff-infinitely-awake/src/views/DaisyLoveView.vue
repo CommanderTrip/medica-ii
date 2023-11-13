@@ -17,7 +17,7 @@ export default {
 
 <template>
   <h1>Daisy Love</h1>
-  <div className="daisy-page">
+  <div class="daisy-page">
     <DaisyImage
       v-for="image in this.photos"
       :key="image.alt"

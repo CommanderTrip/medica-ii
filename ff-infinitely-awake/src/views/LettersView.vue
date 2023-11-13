@@ -5,7 +5,7 @@ import { letters } from "@/components/letters"
 
 <template>
   <h1>Letters of Appreciation to Ras</h1>
-  <div className="letters-page">
+  <div class="letters-page">
     <LetterCard v-for="letter in letters" :key="letter.author" :letter="letter" />
   </div>
 </template>

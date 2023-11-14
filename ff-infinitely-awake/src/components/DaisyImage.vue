@@ -6,15 +6,19 @@ export default {
     },
     alt: {
       type: String
-    },
-    random: {
-      type: Number
     }
   },
   computed: {
+    /**
+     * Generates a random number between -45 and 45 and creates a CSS variable
+     * string to injects style in order for the style tag below to detect the
+     * variable and rotate the image. Designed to create a "collage" of images.
+     *
+     * @returns {{"--rotation": string}}
+     */
     cssVars() {
       return {
-        "--rotation": Math.round(this.random) - 45 + "deg"
+        "--rotation": Math.round(Math.random() * 90) - 45 + "deg"
       }
     }
   }

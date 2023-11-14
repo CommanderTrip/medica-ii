@@ -7,11 +7,6 @@ export default {
   data: () => ({
     photos: daisyPhotos
   }),
-  methods: {
-    random() {
-      return Math.random()
-    }
-  },
   components: { PageLayout, DaisyImage }
 }
 </script>
@@ -19,13 +14,7 @@ export default {
 <template>
   <PageLayout page-title="Daisy Love">
     <div class="daisy-page">
-      <DaisyImage
-        v-for="image in photos"
-        :key="image.alt"
-        :src="image.src"
-        :alt="image.alt"
-        :random="random() * 90"
-      />
+      <DaisyImage v-for="image in photos" :key="image.alt" :src="image.src" :alt="image.alt" />
     </div>
   </PageLayout>
 </template>

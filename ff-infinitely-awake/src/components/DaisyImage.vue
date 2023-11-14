@@ -32,10 +32,11 @@ export default {
 <style scoped>
 img {
   transform: rotate(var(--rotation));
-  max-width: 100%;
-  margin: -50px;
+  max-width: 25%;
   border: 2px solid white;
+  margin-top: -2rem;
 }
+
 img:hover {
   transform: scale(2);
   z-index: 99;

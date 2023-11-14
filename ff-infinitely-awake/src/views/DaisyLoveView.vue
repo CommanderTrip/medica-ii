@@ -19,27 +19,20 @@ export default {
   </PageLayout>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+@import "../assets/styles";
+
 img:hover {
   transform: scale(1.5);
   z-index: 99;
 }
 
 .daisy-page {
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  grid-auto-flow: column;
-  justify-items: center;
-  min-width: 350px;
-  max-height: 100%;
-  margin-top: 10%;
-}
-
-@media (max-width: 800px) {
-  .daisy-page {
-    min-height: 100vh;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-flow: row;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-block: 5rem;
+  margin-right: 5%;
 }
 </style>

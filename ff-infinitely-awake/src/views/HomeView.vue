@@ -1,11 +1,19 @@
 <script>
-import groupPic from "@/assets/static-p9s-group-pic.png"
-import SideBar from "@/components/SideBar.vue"
 import PageLayout from "@/components/PageLayout.vue"
+import { Cloudinary } from "@cloudinary/url-gen"
+import { AdvancedImage } from "@cloudinary/vue"
+
+const cld = new Cloudinary({
+  cloud: {
+    cloudName: "dnwngayqx"
+  }
+})
+
+const myImg = cld.image("static-p9s-group-pic_jylcwm")
 export default {
-  components: { PageLayout },
+  components: { PageLayout, AdvancedImage },
   data: () => ({
-    photo: groupPic
+    photo: myImg
   })
 }
 </script>
@@ -14,7 +22,7 @@ export default {
   <PageLayout
     page-title="Welcome, Ras! From everyone who participated in this creation, we hope you enjoy! 💗"
   >
-    <img :src="this.photo" alt="P9S Static Clear Group Picture" />
+    <AdvancedImage :cldImg="photo" />
     <div class="home-content">
       <h2>psst ... check out the other links!</h2>
       <h4>

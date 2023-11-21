@@ -1,5 +1,9 @@
 <script>
+import { Cloudinary } from "@cloudinary/url-gen"
+import { AdvancedImage } from "@cloudinary/vue"
+
 export default {
+  components: { AdvancedImage },
   props: {
     src: {
       type: String
@@ -7,6 +11,17 @@ export default {
     alt: {
       type: String
     }
+  },
+  data: () => ({
+    photo: null
+  }),
+  created() {
+    const cld = new Cloudinary({
+      cloud: {
+        cloudName: "dnwngayqx"
+      }
+    })
+    this.photo = cld.image(this.$props.src)
   },
   computed: {
     /**
@@ -26,7 +41,7 @@ export default {
 </script>
 
 <template>
-  <img :key="this.alt" :src="this.src" :alt="this.alt" :style="cssVars" />
+  <AdvancedImage :cldImg="photo" :style="cssVars" />
 </template>
 
 <style scoped>

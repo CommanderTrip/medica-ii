@@ -1,148 +1,118 @@
-import daisy from "../assets/daisy-pics/compressjpeg/daisy-pic-min.jpg"
-import daisy1 from "@/assets/daisy-pics/compressjpeg/daisy-pic_6693-min.jpg"
-import daisy2 from "@/assets/daisy-pics/compressjpeg/daisy-pic_6745-min.jpg"
-import daisy3 from "@/assets/daisy-pics/compressjpeg/daisy-pic_6893-min.jpg"
-import daisy4 from "@/assets/daisy-pics/compressjpeg/daisy-pic_6911-min.jpg"
-import daisy5 from "@/assets/daisy-pics/compressjpeg/daisy-pic_6917-min.jpg"
-import daisy6 from "@/assets/daisy-pics/compressjpeg/daisy-pic_6936-min.jpg"
-import daisy7 from "@/assets/daisy-pics/compressjpeg/daisy-pic_7387-min.jpg"
-import daisy8 from "@/assets/daisy-pics/compressjpeg/daisy-pic_7496-min.jpg"
-import daisy9 from "@/assets/daisy-pics/compressjpeg/daisy-pic_7756-min.jpg"
-import daisy10 from "@/assets/daisy-pics/compressjpeg/daisy-pic_7776-min.jpg"
-import daisy11 from "@/assets/daisy-pics/compressjpeg/daisy-pic_7786-min.jpg"
-import daisy12 from "@/assets/daisy-pics/compressjpeg/daisy-pic_7804-min.jpg"
-import daisy13 from "@/assets/daisy-pics/compressjpeg/daisy-pic_8524-min.jpg"
-import daisy14 from "@/assets/daisy-pics/compressjpeg/daisy-pic_8539-min.jpg"
-import daisy15 from "@/assets/daisy-pics/compressjpeg/daisy-pic_8557-min.jpg"
-import daisy16 from "@/assets/daisy-pics/compressjpeg/daisy-pic_8559-min.jpg"
-import daisy17 from "@/assets/daisy-pics/compressjpeg/daisy-pic_8560-min.jpg"
-import daisy19 from "@/assets/daisy-pics/compressjpeg/daisy-pic_8567-min.jpg"
-import daisy20 from "@/assets/daisy-pics/compressjpeg/daisy-pic_8578-min.jpg"
-import daisy21 from "@/assets/daisy-pics/compressjpeg/daisy-pic_8580-min.jpg"
-import daisy22 from "@/assets/daisy-pics/compressjpeg/daisy-pic_8581-min.jpg"
-import daisy23 from "@/assets/daisy-pics/compressjpeg/daisy-pic_8606-min.jpg"
-import daisy24 from "@/assets/daisy-pics/compressjpeg/daisy-pic_8786-min.jpg"
-import daisy25 from "@/assets/daisy-pics/compressjpeg/daisy-pic_8821-min.jpg"
-import daisy26 from "@/assets/daisy-pics/compressjpeg/daisy-pic_8913-min.jpg"
-import daisy27 from "@/assets/daisy-pics/compressjpeg/daisy-pic_8915-min.jpg"
-import daisy28 from "@/assets/daisy-pics/compressjpeg/daisy-pic_8957-min.jpg"
-import daisy29 from "@/assets/daisy-pics/compressjpeg/daisy-pic_9028-min.jpg"
-
 export const daisyPhotos = [
   {
-    src: daisy,
+    src: "daisy/nukmshcuevuuh37np3uz",
     alt: "Cute Daisy"
   },
   {
-    src: daisy1,
+    src: "daisy/yv4unti7lohar7dxwfxa",
     alt: "Cute Daisy"
   },
   {
-    src: daisy2,
+    src: "daisy/eavkaiurhjt4h2xiwbfv",
     alt: "Cute Daisy"
   },
   {
-    src: daisy3,
+    src: "daisy/h0booqsmybrkfyscevy1",
     alt: "Cute Daisy"
   },
   {
-    src: daisy4,
+    src: "daisy/rv5t6ajpz8uk36vhilru",
     alt: "Cute Daisy"
   },
   {
-    src: daisy5,
+    src: "daisy/qcaeh55z1kawmbidgogu",
     alt: "Cute Daisy"
   },
   {
-    src: daisy6,
+    src: "daisy/xibkkzrzhpvc3g8eohp3",
     alt: "Cute Daisy"
   },
   {
-    src: daisy7,
+    src: "daisy/pcq53gqea2kc3pfv7xnm",
     alt: "Cute Daisy"
   },
   {
-    src: daisy8,
+    src: "daisy/ylm20trs5lovxgwsod6j",
     alt: "Cute Daisy"
   },
   {
-    src: daisy9,
+    src: "daisy/wczkdkjdmgiiedtdxo17",
     alt: "Cute Daisy"
   },
   {
-    src: daisy10,
+    src: "daisy/icxjawrqcpmykshivwd3",
     alt: "Cute Daisy"
   },
   {
-    src: daisy11,
+    src: "daisy/cxfuarn24so1yikbp4vd",
     alt: "Cute Daisy"
   },
   {
-    src: daisy12,
+    src: "daisy/qn1166tztyvbi5tlhj00",
     alt: "Cute Daisy"
   },
   {
-    src: daisy13,
+    src: "daisy/ti4ivb3x75ece09sdvbz",
     alt: "Cute Daisy"
   },
   {
-    src: daisy14,
+    src: "daisy/pjevwvzfdplxfgyfsh43",
     alt: "Cute Daisy"
   },
   {
-    src: daisy15,
+    src: "daisy/zgjqhfv5p4h0bnsks3b1",
     alt: "Cute Daisy"
   },
   {
-    src: daisy16,
+    src: "daisy/hwv2phqyf0gm1t4f6mwr",
     alt: "Cute Daisy"
   },
   {
-    src: daisy17,
+    src: "daisy/gbli0jdeiu4ruoypscdf",
     alt: "Cute Daisy"
   },
   {
-    src: daisy19,
+    src: "daisy/cfvtbri0loywrx8w2dp9",
     alt: "Cute Daisy"
   },
   {
-    src: daisy20,
+    src: "daisy/sprwbygulebd7jb2uvio",
     alt: "Cute Daisy"
   },
   {
-    src: daisy21,
+    src: "daisy/dcf4mlghd3wpnowkad32",
     alt: "Cute Daisy"
   },
   {
-    src: daisy22,
+    src: "daisy/foooer0evxne8cimartw",
     alt: "Cute Daisy"
   },
   {
-    src: daisy23,
+    src: "daisy/lbgpeh1vuqdnvdbfqqc6",
     alt: "Cute Daisy"
   },
   {
-    src: daisy24,
+    src: "daisy/fhzwuqcl5l6l4ika8lcm",
     alt: "Cute Daisy"
   },
   {
-    src: daisy25,
+    src: "daisy/brq3n2majj5bznufpqkl",
     alt: "Cute Daisy"
   },
   {
-    src: daisy26,
+    src: "daisy/g4dcka3tdh9a3o0ixgox",
     alt: "Cute Daisy"
   },
   {
-    src: daisy27,
+    src: "daisy/ohap5h7plwlnw4nz6trr",
     alt: "Cute Daisy"
   },
   {
-    src: daisy28,
+    src: "daisy/myuik2qf00cwkwrqegq3",
     alt: "Cute Daisy"
   },
   {
-    src: daisy29,
+    src: "daisy/zrsjnvmteruaeufgbcbh",
     alt: "Cute Daisy"
   }
 ]

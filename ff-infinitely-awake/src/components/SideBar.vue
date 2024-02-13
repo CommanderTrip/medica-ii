@@ -29,6 +29,7 @@ export default {
       <RouterLink to="/">Home</RouterLink>
       <RouterLink to="/Letters">Letters</RouterLink>
       <RouterLink to="/DaisyLove">Daisy Love</RouterLink>
+      <RouterLink to="/Valentine">Valentines</RouterLink>
     </nav>
   </div>
 
@@ -40,6 +41,7 @@ export default {
       <RouterLink to="/">Home</RouterLink>
       <RouterLink to="/Letters">Letters</RouterLink>
       <RouterLink to="/DaisyLove">Daisy Love</RouterLink>
+      <RouterLink to="/Valentine">Valentines</RouterLink>
     </nav>
   </div>
 </template>

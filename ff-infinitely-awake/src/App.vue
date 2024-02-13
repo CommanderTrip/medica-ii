@@ -13,6 +13,7 @@ import { RouterView } from "vue-router"
 
 .page {
   padding-inline: 1rem;
+  width: 100%;
 }
 
 @media (max-width: $lg-phone) {

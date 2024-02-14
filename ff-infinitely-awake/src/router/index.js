@@ -32,6 +32,12 @@ const router = createRouter({
       path: "/valentine",
       name: "Be My Valentine?",
       component: ValentineView
+    },
+    {
+      // path: "*",
+      path: "/:pathMatch(.*)*",
+      name: "NotFound",
+      component: HomeView
     }
   ]
 })

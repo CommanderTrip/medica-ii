@@ -5,7 +5,7 @@ import { RouterLink } from "vue-router"
 export default {
   components: { RouterLink },
   data: () => ({
-    isClosed: ref(false),
+    isClosed: ref(true),
     mobileSidebar: ref(false)
   }),
   methods: {
@@ -30,6 +30,7 @@ export default {
       <RouterLink to="/Letters">Letters</RouterLink>
       <RouterLink to="/DaisyLove">Daisy Love</RouterLink>
       <RouterLink to="/Valentine">Valentines</RouterLink>
+      <RouterLink to="/Lockpick">Lock Picking Game</RouterLink>
     </nav>
   </div>
 
@@ -42,6 +43,7 @@ export default {
       <RouterLink to="/Letters">Letters</RouterLink>
       <RouterLink to="/DaisyLove">Daisy Love</RouterLink>
       <RouterLink to="/Valentine">Valentines</RouterLink>
+      <RouterLink to="/Lockpick">Lock Picking Game</RouterLink>
     </nav>
   </div>
 </template>

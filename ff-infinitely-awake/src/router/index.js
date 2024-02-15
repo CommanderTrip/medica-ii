@@ -4,6 +4,7 @@ import HomeView from "@/views/HomeView.vue"
 import GiftView from "@/views/GiftView.vue"
 import DaisyLoveView from "@/views/DaisyLoveView.vue"
 import ValentineView from "@/views/ValentineView.vue"
+import NumbersGameView from "@/views/NumbersGameView.vue"
 
 const router = createRouter({
   history: createWebHistory(),
@@ -32,6 +33,11 @@ const router = createRouter({
       path: "/valentine",
       name: "Be My Valentine?",
       component: ValentineView
+    },
+    {
+      path: "/lockpick",
+      name: "Numbers lock picking game",
+      component: NumbersGameView
     },
     {
       // path: "*",

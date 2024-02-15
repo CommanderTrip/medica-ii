@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onBeforeMount, type Ref, ref } from "vue"
+import { onBeforeMount, ref } from "vue"
 import PageLayout from "@/components/PageLayout.vue"
 
 let answer: number

@@ -3,11 +3,27 @@
 
 <template>
   <div class="card">
-    <p><span>Home</span></p>
-    <p><span>About</span></p>
-    <p><span>The Static</span></p>
-    <p><span>Events</span></p>
-    <p><span>Join Now</span></p>
+    <RouterLink to="/about">
+      <p>
+        <span>About</span>
+      </p>
+    </RouterLink>
+    <RouterLink to="/static">
+      <p>
+        <span>The Static</span>
+      </p>
+    </RouterLink>
+    <RouterLink to="/events">
+      <p>
+        <span>Events</span>
+      </p>
+    </RouterLink>
+    <RouterLink to="/join">
+      <p>
+        <span>Join Now</span>
+      </p>
+    </RouterLink>
+    <p><span>Coming Soon...</span></p>
   </div>
 </template>
 
@@ -19,7 +35,8 @@
   display: flex;
 }
 
-.card p {
+.card a,
+p {
   height: 100%;
   flex: 1;
   overflow: hidden;
@@ -31,11 +48,12 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  text-decoration: none;
 
   box-shadow: -15px 0px 25px -10px var(--text);
 }
 
-.card p:hover {
+.card a:hover {
   flex: 4;
 }
 

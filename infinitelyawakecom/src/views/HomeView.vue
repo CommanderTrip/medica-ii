@@ -6,6 +6,7 @@ import DisplayCard from "@/components/DisplayCard.vue";
 import image1 from "@/assets/awake-screenshots/2I4recB.png";
 import image2 from "@/assets/awake-screenshots/187b6a0672385-screenshotUrl.jpg";
 import image3 from "@/assets/awake-screenshots/2023-05-05_00-29-30_Talim_-_d-d-doppio.png";
+import PageFooter from "@/components/PageFooter.vue";
 </script>
 
 <template>
@@ -39,6 +40,7 @@ import image3 from "@/assets/awake-screenshots/2023-05-05_00-29-30_Talim_-_d-d-d
     :image="image3"
     alt=""
   />
+  <PageFooter />
 </template>
 
 <style scoped lang="scss">

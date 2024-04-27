@@ -12,12 +12,12 @@ defineProps<{
 
 <template>
   <div v-if="imageLeft" class="wrapper">
-    <img :src="image" :alt="alt" />
+    <img :class="{ cutImageLeft: imageLeft }" :src="image" :alt="alt" />
     <ChapterHeading class="wide" :title="title" :description="description" />
   </div>
   <div v-else class="wrapper">
     <ChapterHeading class="wide" :title="title" :description="description" />
-    <img :src="image" :alt="alt" />
+    <img :class="{ cutImageRight: !imageLeft }" :src="image" :alt="alt" />
   </div>
 </template>
 
@@ -25,7 +25,15 @@ defineProps<{
 img {
   width: 50%;
   object-fit: cover;
-  padding: 2%;
+  padding-block: 2%;
+}
+
+.cutImageLeft {
+  mask-image: linear-gradient(-90deg, #00000000, #ffffffff 25%);
+}
+
+.cutImageRight {
+  mask-image: linear-gradient(90deg, #00000000, #ffffffff 25%);
 }
 
 .wide {

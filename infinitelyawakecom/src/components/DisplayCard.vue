@@ -1,37 +1,23 @@
-<script lang="ts">
+<script setup lang="ts">
 import ChapterHeading from "@/components/ChapterHeading.vue";
 
-export default {
-  components: { ChapterHeading },
-  props: {
-    imageLeft: {
-      type: Boolean,
-      required: true
-    },
-    image: {
-      type: String,
-      required: true
-    },
-    title: {
-      type: String,
-      required: true
-    },
-    description: {
-      type: String,
-      required: true
-    }
-  }
-};
+defineProps<{
+  imageLeft: boolean;
+  title: string;
+  description: string;
+  image: string;
+  alt: string;
+}>();
 </script>
 
 <template>
-  <div v-if="$props.imageLeft" class="wrapper">
-    <img src="../assets/awake-screenshots/image.png" alt="idk" />
-    <ChapterHeading class="wide" title="{{$props.title}}" description="{{ $props.description }}" />
+  <div v-if="imageLeft" class="wrapper">
+    <img :src="image" :alt="alt" />
+    <ChapterHeading class="wide" :title="title" :description="description" />
   </div>
   <div v-else class="wrapper">
-    <ChapterHeading class="wide" title="{{$props.title}}" description="{{ $props.description }}" />
-    <img src="../assets/awake-screenshots/image.png" alt="idk" />
+    <ChapterHeading class="wide" :title="title" :description="description" />
+    <img :src="image" :alt="alt" />
   </div>
 </template>
 
@@ -39,6 +25,7 @@ export default {
 img {
   width: 50%;
   object-fit: cover;
+  padding: 2%;
 }
 
 .wide {

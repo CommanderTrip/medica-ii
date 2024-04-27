@@ -2,6 +2,10 @@
 import HomeAccordion from "@/components/HomeAccordion.vue";
 import ChapterHeading from "@/components/ChapterHeading.vue";
 import DisplayCard from "@/components/DisplayCard.vue";
+
+import image1 from "@/assets/awake-screenshots/2I4recB.png";
+import image2 from "@/assets/awake-screenshots/187b6a0672385-screenshotUrl.jpg";
+import image3 from "@/assets/awake-screenshots/2023-05-05_00-29-30_Talim_-_d-d-doppio.png";
 </script>
 
 <template>
@@ -15,22 +19,25 @@ import DisplayCard from "@/components/DisplayCard.vue";
   </div>
   <ChapterHeading title="Welcome" description="You should join us" />
   <display-card
-    image-left="true"
+    :image-left="true"
     title="About"
     description="We are Awake. Not sleepy."
-    image="../assets/awake-screenshots/image.png)"
+    :image="image1"
+    alt=""
   />
   <display-card
-    imageLeft="false"
+    :image-left="false"
     title="About"
     description="We are Awake. Not sleepy."
-    image="../assets/awake-screenshots/2964358963.png)"
+    :image="image2"
+    alt=""
   />
   <display-card
-    image-left="true"
+    :image-left="true"
     title="About"
     description="We are Awake. Not sleepy."
-    image="../assets/awake-screenshots/image.png)"
+    :image="image3"
+    alt=""
   />
 </template>
 

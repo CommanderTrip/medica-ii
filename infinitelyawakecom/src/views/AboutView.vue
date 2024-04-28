@@ -1,7 +1,13 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import PageLayout from "@/components/PageLayout.vue";
+</script>
 
 <template>
-  <p>About</p>
+  <PageLayout>
+    <div>
+      <p>About</p>
+    </div>
+  </PageLayout>
 </template>
 
 <style scoped lang="scss"></style>

@@ -1,13 +1,13 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="page-footer"></div>
+  <div class="page-header"></div>
 </template>
 
 <style scoped lang="scss">
-.page-footer {
-  width: 100%;
-  min-height: 2rem;
+.page-header {
+  position: sticky;
+  height: 10rem;
   background-color: red;
 }
 </style>

@@ -1,15 +1,15 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="page-header">
+  <header class="page-header">
     <RouterLink to="/" class="title">Infinitely Awake</RouterLink>
-    <div class="header-routes">
+    <nav class="header-routes">
       <RouterLink to="/about">About</RouterLink>
       <RouterLink to="/static">The Static</RouterLink>
       <RouterLink to="/events">Events</RouterLink>
       <RouterLink to="/join">Join Now</RouterLink>
-    </div>
-  </div>
+    </nav>
+  </header>
 </template>
 
 <style scoped lang="scss">

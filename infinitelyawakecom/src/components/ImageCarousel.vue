@@ -29,6 +29,11 @@ import titleImage from "@/assets/awake-screenshots/2023-07-14_18-08-30_Yaz_Dunge
   justify-content: flex-end;
   font-size: xxx-large;
   padding-inline: 2rem;
+  text-shadow:
+    -1px 0 white,
+    0 1px white,
+    1px 0 white,
+    0 -1px white;
 }
 
 img {
@@ -36,14 +41,16 @@ img {
   height: auto;
   min-height: 100%;
   object-fit: cover;
-  opacity: 50%;
+  opacity: 80%;
 }
 
 .site-title em {
   font-size: x-large;
-  font-weight: lighter;
+  font-weight: bold;
   text-shadow:
-    0 0 10px #ffffff,
-    0 2px 20px #ffffff;
+    -1px 0 white,
+    0 1px white,
+    1px 0 white,
+    0 -1px white;
 }
 </style>

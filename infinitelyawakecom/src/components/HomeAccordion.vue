@@ -56,9 +56,7 @@ p {
   flex: 1;
   overflow: hidden;
   cursor: pointer;
-  border-radius: 2px;
   transition: all 0.5s;
-  border: 1px solid var(--accent);
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -81,6 +79,11 @@ p {
   color: var(--text);
   letter-spacing: 0.3em;
   font-size: x-large;
+  text-shadow:
+    -1px 0 white,
+    0 1px white,
+    1px 0 white,
+    0 -1px white;
 }
 
 .nav-section {
@@ -90,7 +93,7 @@ p {
 .nav-section img {
   position: absolute;
   width: auto;
-  opacity: 50%;
+  opacity: 70%;
   height: 100%;
 }
 

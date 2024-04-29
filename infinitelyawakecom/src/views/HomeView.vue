@@ -8,6 +8,12 @@ import image2 from "@/assets/awake-screenshots/187b6a0672385-screenshotUrl.jpg";
 import image3 from "@/assets/awake-screenshots/2023-05-05_00-29-30_Talim_-_d-d-doppio.png";
 import PageFooter from "@/components/PageFooter.vue";
 import ImageCarousel from "@/components/ImageCarousel.vue";
+
+const welcomeDesc = `
+Whether you're a seasoned raider or just getting started becoming the Warrior of Light, we're thrilled to have you join
+us in this adventure-filled community. Get ready to embark on thrilling quests, conquer formidable foes, and forge
+unforgettable memories together. So grab your controllers or keyboards, and may your gaming experience be legendary!
+`;
 </script>
 
 <template>
@@ -15,7 +21,7 @@ import ImageCarousel from "@/components/ImageCarousel.vue";
     <ImageCarousel />
     <HomeAccordion />
   </div>
-  <ChapterHeading title="Welcome" description="You should join us" />
+  <ChapterHeading title="Welcome" :description="welcomeDesc" />
   <display-card
     :image-left="true"
     title="About"

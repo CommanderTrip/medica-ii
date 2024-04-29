@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import titleImage from "@/assets/awake-screenshots/wave.jpg";
+import titleImage from "@/assets/awake-screenshots/2023-07-14_18-08-30_Yaz_Dungeon_v2.png";
 </script>
 
 <template>
@@ -18,7 +18,7 @@ import titleImage from "@/assets/awake-screenshots/wave.jpg";
   position: relative;
   height: 100%;
   width: 100%;
-  z-index: -1;
+  overflow: hidden;
 }
 
 .site-title {
@@ -34,8 +34,9 @@ import titleImage from "@/assets/awake-screenshots/wave.jpg";
 img {
   width: 100%;
   height: auto;
+  min-height: 100%;
   object-fit: cover;
-  opacity: 33%;
+  opacity: 50%;
 }
 
 .site-title em {

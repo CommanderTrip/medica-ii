@@ -3,8 +3,6 @@ import HomeAccordion from "@/components/HomeAccordion.vue";
 import ChapterHeading from "@/components/ChapterHeading.vue";
 import DisplayCard from "@/components/DisplayCard.vue";
 
-import titleImage from "@/assets/awake-screenshots/wave.jpg";
-
 import image1 from "@/assets/awake-screenshots/2I4recB.png";
 import image2 from "@/assets/awake-screenshots/187b6a0672385-screenshotUrl.jpg";
 import image3 from "@/assets/awake-screenshots/2023-05-05_00-29-30_Talim_-_d-d-doppio.png";

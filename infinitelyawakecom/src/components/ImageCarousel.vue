@@ -30,10 +30,9 @@ import titleImage from "@/assets/awake-screenshots/2023-07-14_18-08-30_Yaz_Dunge
   font-size: xxx-large;
   padding-inline: 2rem;
   text-shadow:
-    -1px 0 white,
-    0 1px white,
-    1px 0 white,
-    0 -1px white;
+    0 0 1px #000000,
+    0 0 2px #000000,
+    0 0 3px #000000;
 }
 
 img {
@@ -46,11 +45,10 @@ img {
 
 .site-title em {
   font-size: x-large;
-  font-weight: bold;
+  font-weight: lighter;
   text-shadow:
-    -1px 0 white,
-    0 1px white,
-    1px 0 white,
-    0 -1px white;
+    0 0 1px #000000,
+    0 0 2px #000000,
+    0 0 3px #000000;
 }
 </style>

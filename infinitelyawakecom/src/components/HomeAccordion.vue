@@ -80,10 +80,9 @@ p {
   letter-spacing: 0.3em;
   font-size: x-large;
   text-shadow:
-    -1px 0 white,
-    0 1px white,
-    1px 0 white,
-    0 -1px white;
+    0 0 1px #000000,
+    0 0 2px #000000,
+    0 0 3px #000000;
 }
 
 .nav-section {

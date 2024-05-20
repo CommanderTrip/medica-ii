@@ -1,4 +1,4 @@
-@import './base.css';
+@import 'themes.css';
 
 #app {
   max-width: 1440px;
@@ -6,6 +6,9 @@
   font-weight: normal;
 }
 
-@media (min-width: 1024px) {
-
+.text-shadow {
+  text-shadow:
+    0 0 1px var(--background),
+    0 0 2px var(--background),
+    0 0 3px var(--background);
 }

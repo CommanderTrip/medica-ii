@@ -19,7 +19,6 @@ div {
   flex-direction: column;
   align-items: center;
   padding-block: 2rem;
-  background: linear-gradient(-45deg, var(--text), var(--accent));
 }
 
 span {

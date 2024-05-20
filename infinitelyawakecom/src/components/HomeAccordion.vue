@@ -12,31 +12,31 @@ import comingImg from "@/assets/awake-screenshots/2023-11-15_Neneko_Fragments_of
     <RouterLink class="nav-section" to="/about">
       <img class="about-img" :src="aboutImg" alt="" />
       <p>
-        <span>About</span>
+        <span class="text-shadow">About</span>
       </p>
     </RouterLink>
     <RouterLink class="nav-section" to="/static">
       <img class="static-img" :src="staticImg" alt="" />
       <p>
-        <span>The Static</span>
+        <span class="text-shadow">The Static</span>
       </p>
     </RouterLink>
     <RouterLink class="nav-section" to="/events">
       <img class="events-img" :src="eventsImg" alt="" />
       <p>
-        <span>Events</span>
+        <span class="text-shadow">Events</span>
       </p>
     </RouterLink>
     <RouterLink class="nav-section" to="/join">
       <img class="join-img" :src="joinImg" alt="" />
       <p>
-        <span>Join Now</span>
+        <span class="text-shadow">Join Now</span>
       </p>
     </RouterLink>
     <RouterLink class="nav-section" to="/">
       <img class="coming-img" :src="comingImg" alt="" />
       <p>
-        <span>Coming Soon...</span>
+        <span class="text-shadow">Coming Soon...</span>
       </p>
     </RouterLink>
   </nav>
@@ -79,10 +79,6 @@ p {
   color: var(--text);
   letter-spacing: 0.3em;
   font-size: x-large;
-  text-shadow:
-    0 0 1px #000000,
-    0 0 2px #000000,
-    0 0 3px #000000;
 }
 
 .nav-section {

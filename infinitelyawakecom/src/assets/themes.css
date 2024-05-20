@@ -10,12 +10,17 @@
 
   --purple-jam: #692190;
   --squash: #FCA311;
+  --cello: #243C65;
+  --big-stone: #192A47;
+  --green-pea: #246559;
+  --papa-green: #19473E;
 
   --cadet-grey: #94a1b2;
   --mercury: #E5E5E5;
   --white: #FFFFFF;
 
   --page-banner-height: 600px;
+  --small-screen: 768px;
 }
 
 /* semantic color variables for this project */

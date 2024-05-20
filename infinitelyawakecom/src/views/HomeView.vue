@@ -9,6 +9,7 @@ import PageFooter from "@/components/PageFooter.vue";
 import ImageCarousel from "@/components/ImageCarousel.vue";
 import CommunityAndCompetition from "@/components/CommunityAndCompetition.vue";
 import EventsAndFun from "@/components/EventsAndFun.vue";
+import FFRaidPreview from "@/components/FFRaidPreview.vue";
 
 const welcomeDesc = `
 Whether you're a seasoned raider or just getting started becoming the Warrior of Light, we're thrilled to have you join
@@ -49,10 +50,12 @@ unforgettable memories together. So grab your controllers or keyboards, and may 
   <display-card
     :image-left="true"
     title="Top Tier Raiding"
-    description="Overcoming our next, new boss!"
+    description="Overcoming our next boss; see you next tier!"
     :image="topTierRaiding"
     alt="A show of accomplishment"
-  />
+  >
+    <FFRaidPreview />
+  </display-card>
   <PageFooter />
 </template>
 

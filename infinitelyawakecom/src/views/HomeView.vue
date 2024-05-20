@@ -3,10 +3,12 @@ import HomeAccordion from "@/components/HomeAccordion.vue";
 import DisplayCard from "@/components/DisplayCard.vue";
 
 import commAndComp from "@/assets/awake-screenshots/community-and-competition.png";
-import eventsAndFun from "@/assets/awake-screenshots/events-and-fun.jpg";
+import eventsAndFunImage from "@/assets/awake-screenshots/events-and-fun.jpg";
 import topTierRaiding from "@/assets/awake-screenshots/top-tier-raiding.png";
 import PageFooter from "@/components/PageFooter.vue";
 import ImageCarousel from "@/components/ImageCarousel.vue";
+import CommunityAndCompetition from "@/components/CommunityAndCompetition.vue";
+import EventsAndFun from "@/components/EventsAndFun.vue";
 
 const welcomeDesc = `
 Whether you're a seasoned raider or just getting started becoming the Warrior of Light, we're thrilled to have you join
@@ -32,14 +34,18 @@ unforgettable memories together. So grab your controllers or keyboards, and may 
     description="Make friends and challenge each other!"
     :image="commAndComp"
     alt="A show of friendly competition."
-  />
+  >
+    <CommunityAndCompetition />
+  </display-card>
   <display-card
     :image-left="false"
     title="Events and Fun"
     description="Always something to do!"
-    :image="eventsAndFun"
+    :image="eventsAndFunImage"
     alt="A show of excitement."
-  />
+  >
+    <EventsAndFun />
+  </display-card>
   <display-card
     :image-left="true"
     title="Top Tier Raiding"

@@ -18,7 +18,9 @@ defineProps<{
       :class="{ headerRight: imageLeft }"
       :title="title"
       :description="description"
-    />
+    >
+      <slot></slot>
+    </ChapterHeading>
   </div>
   <div v-else class="wrapper">
     <ChapterHeading
@@ -26,7 +28,9 @@ defineProps<{
       :class="{ headerLeft: !imageLeft }"
       :title="title"
       :description="description"
-    />
+    >
+      <slot></slot>
+    </ChapterHeading>
     <img :class="{ cutImageRight: !imageLeft }" :src="image" :alt="alt" />
   </div>
 </template>

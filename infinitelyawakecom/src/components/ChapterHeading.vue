@@ -9,6 +9,7 @@ defineProps<{
   <div>
     <h2>{{ $props.title }}</h2>
     <em class="description">{{ $props.description }}</em>
+    <slot></slot>
   </div>
 </template>
 

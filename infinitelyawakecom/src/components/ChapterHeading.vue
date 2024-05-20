@@ -7,9 +7,8 @@ defineProps<{
 
 <template>
   <div>
-    <p>{{ $props.title }}</p>
-    <p><span>|</span></p>
-    <p class="description">{{ $props.description }}</p>
+    <h2>{{ $props.title }}</h2>
+    <em class="description">{{ $props.description }}</em>
   </div>
 </template>
 
@@ -21,11 +20,7 @@ div {
   padding-block: 2rem;
 }
 
-span {
-  color: var(--accent);
-}
-
-p {
+h2 {
   font-size: xx-large;
 }
 

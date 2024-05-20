@@ -1,4 +1,6 @@
 <script setup lang="ts">
+// TODO: Make this component into an image carousel
+
 import titleImage from "@/assets/awake-screenshots/2023-07-14_18-08-30_Yaz_Dungeon_v2.png";
 </script>
 
